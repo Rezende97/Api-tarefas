@@ -8,7 +8,7 @@
 
         public static function url()
         {
-            self::$url = "http://localhost/Projetos-pessoal/Api-tarefas/";
+            self::$url = "http://localhost/Projetos-pessoal/projetos-back-end/Api-tarefas/";
 
             return self::$url;
         }
