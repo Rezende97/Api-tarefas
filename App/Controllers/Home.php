@@ -10,7 +10,7 @@
         {
             
             $header['status']   = 'Sucesso teste';
-            $header['informa'] = $_SERVER['REQUEST_METHOD'];
+            $header['request'] = $_SERVER['REQUEST_METHOD'];
             $header['msg']     = 'metodo api GET';
             $header['data'] = $_GET;
 
@@ -23,7 +23,7 @@
         {
 
             $header['status']   = 'Sucesso';
-            $header['informa'] = $_SERVER['REQUEST_METHOD'];
+            $header['request'] = $_SERVER['REQUEST_METHOD'];
             $header['msg']     = 'metodo api POST';
             $header['body'] = $_POST;
             
@@ -31,10 +31,10 @@
             $cabecalho::http_json($header);
         }
 
-        public function update()
+        public function update($id)
         {
             $header['status']   = 'Sucesso TESTE';
-            $header['informa'] = $_SERVER['REQUEST_METHOD'];
+            $header['request'] = $_SERVER['REQUEST_METHOD'];
             $header['msg']     = 'metodo API PUT';
             $header['body'] = $_REQUEST;
             
@@ -45,7 +45,7 @@
         public function delete($id)
         {
             $header['status']   = 'Sucesso';
-            $header['informa'] = $_SERVER['REQUEST_METHOD'];
+            $header['request'] = $_SERVER['REQUEST_METHOD'];
             $header['msg']     = 'metodo API DELETE';
             $header['body'] = $_REQUEST;
             
