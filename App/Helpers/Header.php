@@ -1,6 +1,6 @@
 <?php
 
-    namespace App\Factory;
+    namespace App\Helpers;
 
     class Header
     {

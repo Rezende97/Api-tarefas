@@ -23,6 +23,9 @@
     $router->put("/", "Home:update");
     $router->delete("/", "Home:delete");
 
+    $router->group('login');
+    $router->post("/", "Login:authentication");
+
     /**
      * 
      * Tratamento de erro

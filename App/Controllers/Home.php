@@ -2,7 +2,7 @@
  
     namespace App\Controllers;
 
-    use App\Factory\Header;
+    use App\Helpers\Header;
 
     class Home
     {
