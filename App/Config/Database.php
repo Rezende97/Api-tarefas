@@ -3,7 +3,6 @@
     namespace App\Config;
 
     use PDO;
-
     abstract class Database
     {
         protected $connection;
@@ -41,4 +40,17 @@
             return $this->conn();
         }
 
+        public function fetch($consulta)
+        {
+            $this->registros = $consulta->fetch(PDO::FETCH_ASSOC);
+
+            return $this->registros;
+        }
+
+        public function fetchAll($consulta)
+        {
+            $this->registros = $consulta->fetchAll(\PDO::FETCH_ASSOC);
+
+            return $this->registros;
+        }
     }
