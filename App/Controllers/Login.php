@@ -33,7 +33,7 @@
                         
                         $_SESSION['user'] = $this->user["name_user"];
 
-                        $data['data']   = $_SESSION['user'];
+                        $data['user']   = $_SESSION['user'];
                         $data['sucess'] = true;
     
                     }else {
