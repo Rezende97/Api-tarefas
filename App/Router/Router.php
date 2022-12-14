@@ -26,6 +26,10 @@
     $router->group('login');
     $router->post("/", "Login:authentication");
 
+    $router->group('tarefas');
+    $router->get("/", "Tarefas:show");
+    $router->post("/", "Tarefas:tarefasDiarias");
+
     /**
      * 
      * Tratamento de erro

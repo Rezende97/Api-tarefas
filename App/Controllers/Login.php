@@ -31,8 +31,10 @@
                     
                     if ($this->password == $this->user["password_user"]) {
                         
+                        $_SESSION['id']   = $this->user["id_user"];
                         $_SESSION['user'] = $this->user["name_user"];
 
+                        $data["id"]     = $_SESSION['id'];
                         $data['user']   = $_SESSION['user'];
                         $data['sucess'] = true;
     

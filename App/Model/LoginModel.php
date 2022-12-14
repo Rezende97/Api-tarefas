@@ -14,7 +14,7 @@
 
         public function acesso($email)
         {
-            $this->sql    = "SELECT name_user, password_user, active FROM users WHERE email   = '$email'";
+            $this->sql    = "SELECT id_user, name_user, password_user, active FROM users WHERE email   = '$email'";
             $this->query  = parent::connection()->query($this->sql);
             $this->query->execute();
 
